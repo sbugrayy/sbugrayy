@@ -17,9 +17,9 @@ concurrency:
 
 env:
   # Weight by bytes and by number of repos so one big repo can't dominate.
-  # Game-jam repos are team projects, and markup/shader languages are noise for this card.
+  # Game-jam repos are team projects; markup, shader and build/script languages are noise here.
   CARD_OPTIONS: >-
-    layout=compact&langs_count=8&card_width=420&border_radius=10&custom_title=Most%20Used%20Languages&size_weight=0.5&count_weight=0.5&exclude_repo=Connect,GNGjam&hide=html,css,scss,shaderlab,hlsl,rich%20text%20format
+    layout=compact&langs_count=8&card_width=420&border_radius=10&custom_title=Most%20Used%20Languages&size_weight=0.5&count_weight=0.5&exclude_repo=Connect,GNGjam&hide=html,css,scss,shaderlab,hlsl,rich%20text%20format,cmake,swift,objective-c,shell,powershell,batchfile,dockerfile,makefile
 
 jobs:
   cards:
